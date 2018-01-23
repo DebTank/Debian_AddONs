@@ -1,0 +1,2 @@
+echo Username:monday;echo Path: /var/spool/cron/crontabs/monday;crontab -l -u monday
+echo Username:root;echo Path: /var/spool/cron/crontabs/root;crontab -l -u root

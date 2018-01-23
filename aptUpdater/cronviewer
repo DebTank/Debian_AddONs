@@ -1,0 +1,6 @@
+echo "[Info] List all crontabs instlaled for all users"
+CRON_INSTALLED=$(ls /var/spool/cron/crontabs)
+echo -e 'Users that has a crontab file:\n' $CRON_INSTALLED '\n'
+echo $CRON_INSTALLED | sed 's/ /\n/g' | awk '{print "echo Username:"$1";echo Path: /var/spool/cron/crontabs/"$1";crontab -l -u "$1}' > cronviewer.run
+chmod 700 cronviewer.run
+. cronviewer.run | less

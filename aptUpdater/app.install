@@ -1,0 +1,1 @@
+sudo cat appUpdater.script >> /var/spool/cron/crontabs/root

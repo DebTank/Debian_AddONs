@@ -1,0 +1,5 @@
+
+### Backup Original Crontab file for root.
+sudo cp /var/spool/cron/crontabs/root  ./crontab.root.backup
+### Remove appUpdater script from crontab file.
+sudo awk 'NR==FNR{a[$0];next} !($0 in a)' appUpdater.script ./crontab.root.backup >/var/spool/cron/crontabs/root   
