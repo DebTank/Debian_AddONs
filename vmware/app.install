@@ -1,0 +1,9 @@
+### Download and Installation on the fly ###
+
+yes|sudo apt install libcanberra-gtk-module
+sudo wget -nc --content-disposition https://www.vmware.com/go/getplayer-linux 
+InstallerName=$(ls VM*)
+## Work station version
+#wget 'https://download3.vmware.com/software/player/file/VMware-Player-12.5.9-7535481.x86_64.bundle'
+chmod 700 $InstallerName
+./$InstallerName

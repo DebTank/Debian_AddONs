@@ -1,0 +1,6 @@
+### Installation using splited file / predownloaded 
+
+CURRENT_PATH=$(pwd)
+cd vmware> /dev/null
+sudo ./split_join
+cd $CURRENT_PATH
