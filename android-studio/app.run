@@ -1,0 +1,5 @@
+cd ./pkg/bin > /dev/null
+./studio.sh & echo $! > ../app.pid 
+cd ../.. > /dev/null
+## Got PID method via echo
+echo "Running Android Studio using PID : $(cat app.pid)"

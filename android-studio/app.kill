@@ -1,0 +1,5 @@
+## Ensure process is running
+ps aux | grep idea.platform.prefix=AndroidStudio  | head -n 1| awk '{print $2}' > app.pid
+echo "Ensured Android Studio using PID : $(cat app.pid)"
+echo "kill $(cat app.pid)"
+kill $(cat app.pid) 
