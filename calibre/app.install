@@ -1,0 +1,3 @@
+##sudo wget https://download.calibre-ebook.com/linux-installer.py 
+##sudo python linux-installer.py
+sudo apt install calibre calibre-bin
