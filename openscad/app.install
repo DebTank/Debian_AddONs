@@ -1,0 +1,4 @@
+sudo wget -qO - http://files.openscad.org/OBS-Repository-Key.pub | sudo apt-key add -
+sudo echo 'deb http://download.opensuse.org/repositories/home:/t-paul/Debian_Testing_standard/ ./' >> /etc/apt/sources.list.d/openscad.list
+
+sudo apt install openscad
