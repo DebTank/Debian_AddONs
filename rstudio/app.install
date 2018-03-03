@@ -6,7 +6,7 @@ case $option in
                 sudo dpkg -i  rstudio-server-1.1.383-amd64.deb
             ;;
             desktop)
-	            wget -nc https://download1.rstudio.org/rstudio-xenial-1.1.383-amd64.deb
+	        wget -nc https://download1.rstudio.org/rstudio-xenial-1.1.383-amd64.deb
                 sudo dpkg -i rstudio-xenial-1.1.383-amd64.deb
             ;;
             *)
