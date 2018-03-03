@@ -1,6 +1,8 @@
 #!/bin/bash
 
+### Total_FileName/ True_FileName
 TFNAME=VMware-Player-14.0.0-6661328.x86_64.bundle
+### Splited_FileName
 SFNAME=vmware.
 
 ### Split files into parts
@@ -18,7 +20,7 @@ cat $SFNAME* > restored_$TFNAME
 
 function QNA() {
    echo "[Info] Use 'spliter' to split a file to 49MB, 'joiner' to join them as executable"
-	echo "[Info] Set TFNAME as TotalFileName, Set SFNAME as SplitName"
+	echo "[Info] Set TFNAME as TotalFileName, Set SFNAME as Splited_FileName"
 	echo "[Question] What is your plan now? (split/join)"
 	read option 
    case $option in
