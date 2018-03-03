@@ -20,5 +20,14 @@
 
 
 ## Highlights:
-- League of Legends :
+- PhotoShop CS6 :
+https://www.playonlinux.com/en/app-2316-Adobe_Photoshop_CS6.html
+
+- League of Legends : 
 https://www.playonlinux.com/en/app-1135-League_Of_Legends.html
+
+- Diablo 3 :
+http://www.gamersonlinux.com/forum/threads/diablo-3-guide.1691/
+
+- Steam on Linux : (Not tested yet)
+https://steamcommunity.com/sharedfiles/filedetails/?id=408064306
