@@ -1,0 +1,3 @@
+[submodule "xautoclick"]
+	path = xautoclick
+	url = https://github.com/qarkai/xautoclick
