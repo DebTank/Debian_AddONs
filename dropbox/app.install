@@ -1,0 +1,5 @@
+mkdir -p ./download
+cd ./download >> /dev/null 
+wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - 
+cd ..
+./download/.dropbox-dist/dropboxd 
