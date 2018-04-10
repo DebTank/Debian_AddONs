@@ -1,1 +1,2 @@
-dpkg -i skypeforlinux-64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+yes|apt --fix-broken install
