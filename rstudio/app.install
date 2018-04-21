@@ -1,13 +1,14 @@
+RSTUDIO_VER=1.1.447
 function optRs() {
 read option
 case $option in
             server)
-            	wget -nc https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
-                sudo dpkg -i  rstudio-server-1.1.383-amd64.deb
+            	wget -nc https://download2.rstudio.org/rstudio-server-$RSTUDIO_VER-amd64.deb
+                sudo dpkg -i  rstudio-server-$RSTUDIO_VER-amd64.deb
             ;;
             desktop)
-	        wget -nc https://download1.rstudio.org/rstudio-xenial-1.1.383-amd64.deb
-                sudo dpkg -i rstudio-xenial-1.1.383-amd64.deb
+	           wget -nc https://download1.rstudio.org/rstudio-xenial-$RSTUDIO_VER-amd64.deb
+                sudo dpkg -i rstudio-xenial-$RSTUDIO_VER-amd64.deb
             ;;
             *)
                 echo "Please check https://www.rstudio.com/products/rstudio/download/#download for your flavor"
@@ -20,6 +21,7 @@ yes| sudo apt install r-base
 yes| sudo apt install r-base-dev
 yes| sudo apt install libatlas3-base
 yes| sudo apt install libopenblas-base
-echo "Do you want to install [server] or [desktop] version ? \n Enter your option : "
+echo "Do you want to install [server] or [desktop] version ?"
+echo "Enter your option : "
 optRs
 unset optRs

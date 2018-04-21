@@ -1,14 +1,17 @@
+LINUX_VER=$(uname -a | sed 's/-amd64/ /' | awk '{print $3}')
 ### upgrade from stretch to buster ###
-apt install linux-headers-amd64 linux-headers-4.14.0-3-rt-amd64
-apt install linux-headers-4.14.0-3-amd64
-apt install linux-headers-4.14.0-3-common
-apt install linux-headers-4.14.0-3-common-rt
-apt install linux-headers-4.14.0-3-rt-amd64
-apt install linux-image-4.14.0-3-amd64
-apt install linux-image-4.14.0-3-amd64-dbg
-apt install linux-image-4.14.0-3-rt-amd64
-apt install linux-image-4.14.0-3-rt-amd64-dbg
+yes |sudo apt install linux-headers-amd64 
+yes |sudo apt install linux-headers-$LINUX_VER-rt-amd64
+yes |sudo apt install linux-headers-$LINUX_VER-amd64
+yes |sudo apt install linux-headers-$LINUX_VER-common
+yes |sudo apt install linux-headers-$LINUX_VER-common-rt
+yes |sudo apt install linux-headers-$LINUX_VER-rt-amd64
+yes |sudo apt install linux-image-$LINUX_VER-amd64
+yes |sudo apt install linux-image-$LINUX_VER-amd64-dbg
+yes |sudo apt install linux-image-$LINUX_VER-rt-amd64
+yes |sudo apt install linux-image-$LINUX_VER-rt-amd64-dbg
+yes |sudo apt install gcc make perl libqt5opengl5
 
 ### reboot is suggested ### 
-apt install libqt5opengl5
 dpkg -i virtualbox-5.2_5.2.6-120293_Debian_stretch_amd64.deb 
+yes|apt --fix-broken install
