@@ -1,0 +1,3 @@
+# https://developer.android.com/studio/run/emulator-acceleration.html?utm_source=android-studio#vm-linux
+
+yes |sudo apt install qemu-kvm libvirt-clients libvirt0 libvirt-clients libvirt-daemon
