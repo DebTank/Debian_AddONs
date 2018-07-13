@@ -1,0 +1,25 @@
+#!/bin/bash
+#https://about.gitlab.com/installation/#debian
+sudo apt-get update
+sudo apt-get install -y curl openssh-server ca-certificates
+sudo apt-get install -y postfix
+
+
+echo "Which version do you want to install (ce/ee) "
+read option 
+case $option in 
+        ce )
+            curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+            sudo EXTERNAL_URL="http://localhost" apt-get install gitlab-ce
+            break;
+        ;;
+        ee )
+            curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+            sudo EXTERNAL_URL="http://localhost" apt-get install gitlab-ee
+            break;
+        ;;
+        default)
+            echo "Read More from  :https://about.gitlab.com/installation/ce-or-ee/?distro=debian "
+        ;;
+esac
+
