@@ -1,0 +1,2 @@
+sudo apt remove libxcb-xtest0
+dpkg --purge zoom_amd64.deb
