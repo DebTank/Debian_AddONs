@@ -1,0 +1,6 @@
+username=$(id -nu)
+groups $username
+#sudo cat /etc/group
+sudo adduser $username libvirt
+groups $username
+#sudo cat /etc/group
