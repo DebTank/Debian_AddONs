@@ -2,5 +2,7 @@ username=$(id -nu)
 groups $username
 #sudo cat /etc/group
 sudo adduser $username libvirt
+sudo adduser $username kvm
+sudo adduser $username libvirt-qemu
 groups $username
 #sudo cat /etc/group
